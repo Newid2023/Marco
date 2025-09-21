@@ -469,13 +469,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     
     elif query.data == "start":
-        buttons = [
-               InlineKeyboardButton('⚙ Lᴀᴛᴇꜱᴛ Mᴏᴠɪᴇ Rᴇʟᴇᴀꜱᴇꜱ ⚙', url=f'https://t.me/+uA5gEKm8WXk1ZTll')
-               ],[
-                InlineKeyboardButton('⚓️ Oᴛᴛ Iɴsᴛᴀɢʀᴀᴍ Cʜᴀɴɴᴇʟ ⚓️', url=f'https://www.instagram.com/new_ott__updates?igsh=enI5ZzIzcXkzd3Bl')
-              ],[
-                InlineKeyboardButton('🖥 Oᴛᴛ Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🖥', url="https://t.me/MCUupdatesLINKS"),
-        ]       
+        buttons = [[
+            InlineKeyboardButton('🔗 OUR CHANELS LINKS 🔗', url=f'https://t.me/MC_CINEMAS')
+            ],[
+            InlineKeyboardButton('📌 MY GROUP', url=f'https://t.me/+vaGyiQirUt4xNDFk'),
+            InlineKeyboardButton('🛠 MY OWNER', url='https://t.me/Leomc_bot')
+            ],[      
+            InlineKeyboardButton('⚠️ ʜᴇʟᴘ', callback_data='help'),
+            InlineKeyboardButton('✨ ᴀʙᴏᴜᴛ', callback_data='about')
+            ],[
+            InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url='https://t.me/MC_MONICA_bot?startgroup=true')
+        ]]       
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
