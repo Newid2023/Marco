@@ -44,7 +44,7 @@ Name - {}
 {file_caption}
 
 ╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╗ 
-➲ <a href='t.me/MCUupdatesLINKS'>@OTT UPDTES</a>
-➲ <a href='https://t.me/+uA5gEKm8WXk1ZTll'>@MAIN CHANNEL</a>
+➲ <a href='https://t.me/+KJHSwIdswKUwZjU1'>@OTT UPDTES</a>
+➲ <a href='https://t.me/+KJHSwIdswKUwZjU1'>@MAIN CHANNEL</a>
 ╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╝
 </b>"""
