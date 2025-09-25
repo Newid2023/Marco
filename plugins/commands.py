@@ -88,6 +88,11 @@ async def send_file(client, query, ident, file_id):
         protect_content=True if ident == 'checksubp' else False,
         reply_markup=reply_markup
     )    
+    k = await message.reply_text("**⚠️ 𝖳𝗁𝗂𝗌 𝗆𝖾𝖽𝗂𝖺 𝗐𝗂𝗅𝗅 𝖻𝖾 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝗐𝗂𝗍𝗁𝗂𝗇 <u>5 𝗆𝗂𝗇𝗎𝗍𝖾.</u>**\n__𝖪𝗂𝗇𝖽𝗅𝗒 𝖿𝗈𝗋𝗐𝖺𝗋𝖽 𝗂𝗍 𝗍𝗈 𝗌𝖺𝗏𝖾𝖽 𝗆𝖾𝗌𝗌𝖺𝗀𝖾𝗌.__")
+    await asyncio.sleep(300)
+    await ok.delete()
+    await k.edit("<b>Your File/Video is successfully deleted!!!</b>")
+    return   
    
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):   
