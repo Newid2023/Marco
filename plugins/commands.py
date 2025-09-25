@@ -282,12 +282,17 @@ async def start(client, message):
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 logger.warning(f"Floodwait of {e.x} sec.")
-                await client.send_cached_media(
+                ok = await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     )
+                k = await message.reply_text("**⚠️ 𝖳𝗁𝗂𝗌 𝗆𝖾𝖽𝗂𝖺 𝗐𝗂𝗅𝗅 𝖻𝖾 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝗐𝗂𝗍𝗁𝗂𝗇 <u>5 𝗆𝗂𝗇𝗎𝗍𝖾.</u>**\n__𝖪𝗂𝗇𝖽𝗅𝗒 𝖿𝗈𝗋𝗐𝖺𝗋𝖽 𝗂𝗍 𝗍𝗈 𝗌𝖺𝗏𝖾𝖽 𝗆𝖾𝗌𝗌𝖺𝗀𝖾𝗌.__")
+                await asyncio.sleep(300)
+                await ok.delete()
+                await k.edit("<b>Your File/Video is successfully deleted!!!</b>")
+                return
             except Exception as e:
                 logger.warning(e, exc_info=True)
                 continue
