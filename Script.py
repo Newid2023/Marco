@@ -1,11 +1,11 @@
 class script(object):
     START_TXT = """<b>𝖧𝖾𝗒 {}, 𝖨 𝖠𝗆 <a href=https://t.me/{}>{}</a>, 𝖧𝖺𝗉𝗉𝗒 🖤 𝖳𝗈 𝖧𝖺𝗏𝖾 𝖸𝗈𝗎
 
-Here You Can Request Movie's, Just Sent <a href='https://t.me/Lord_Marco_Mc_bot'>Movie Name</a> With Proper <a href='https://www.google.com/'>Google</a> Spelling..!!
+Here You Can Request Movie's, Just Sent <a href='https://t.me/+3SrhYvCpBF80MDll'>Movie Name</a> With Proper <a href='https://www.google.com/'>Google</a> Spelling..!!
 
 Fᴏʀ Mᴏʀᴇ Dᴇᴛᴀɪʟꜱ Cʟɪᴄᴋ /help
 
-Cᴏɴᴛᴀᴄᴛ Bᴏᴛ Dᴇᴠᴇʟᴏᴘᴇʀ (Oʀ) Rᴇᴘᴏʀᴛ Bᴜɢꜱ..!! 👉 @Leomc_bot</b>"""
+Cᴏɴᴛᴀᴄᴛ Bᴏᴛ Dᴇᴠᴇʟᴏᴘᴇʀ (Oʀ) Rᴇᴘᴏʀᴛ Bᴜɢꜱ..!! 👉 @MC_Adminser_bot</b>"""
 
     STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
 ★ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂: <code>{}</code>
@@ -44,7 +44,6 @@ Name - {}
 {file_caption}
 
 ╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╗ 
-➲ <a href='https://t.me/+KJHSwIdswKUwZjU1'>@OTT UPDTES</a>
-➲ <a href='https://t.me/+KJHSwIdswKUwZjU1'>@MAIN CHANNEL</a>
+➲ <a href='https://t.me/+3SrhYvCpBF80MDll'>@MAIN Group</a>
 ╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╝
 </b>"""
