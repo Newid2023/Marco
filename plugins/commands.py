@@ -75,10 +75,8 @@ async def send_file(client, query, ident, file_id):
             f_caption = f_caption
     if f_caption is None:
         f_cation = f"{title}"
-    inline_keyboard = [[
-            InlineKeyboardButton('🖥 Oᴛᴛ Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🖥', url=f'https://t.me/MCUupdatesLINKS')
-            ],[     
-            InlineKeyboardButton('⚙ Lᴀᴛᴇꜱᴛ Mᴏᴠɪᴇ Rᴇʟᴇᴀꜱᴇꜱ ⚙', url='https://t.me/+uA5gEKm8WXk1ZTll')
+    inline_keyboard = [[     
+            InlineKeyboardButton('⚙ Lᴀᴛᴇꜱᴛ Mᴏᴠɪᴇ Rᴇʟᴇᴀꜱᴇꜱ ⚙', url='https://t.me/+3SrhYvCpBF80MDll')
     ]]
     reply_markup = InlineKeyboardMarkup(inline_keyboard)
     ok = await client.send_cached_media(
@@ -98,15 +96,13 @@ async def send_file(client, query, ident, file_id):
 async def start(client, message):   
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-            InlineKeyboardButton('🔗 OUR CHANELS LINKS 🔗', url=f'https://t.me/MC_CINEMAS')
-            ],[
-            InlineKeyboardButton('📌 MY GROUP', url=f'https://t.me/+vaGyiQirUt4xNDFk'),
-            InlineKeyboardButton('🛠 MY OWNER', url='https://t.me/Leomc_bot')
+            InlineKeyboardButton('📌 MY GROUP', url=f'https://t.me/+3SrhYvCpBF80MDll'),
+            InlineKeyboardButton('🛠 MY OWNER', url='https://t.me/MC_Adminser_bot')
             ],[      
             InlineKeyboardButton('⚠️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('✨ ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url='https://t.me/MC_MONICA_bot?startgroup=true')
+            InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url='https://t.me/Elsa_2_bot?startgroup=true')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -121,15 +117,13 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🔗 OUR CHANELS LINKS 🔗', url=f'https://t.me/MC_CINEMAS')
-            ],[
-            InlineKeyboardButton('📌 MY GROUP', url=f'https://t.me/+vaGyiQirUt4xNDFk'),
-            InlineKeyboardButton('🛠 MY OWNER', url='https://t.me/Leomc_bot')
+            InlineKeyboardButton('📌 MY GROUP', url=f'https://t.me/+3SrhYvCpBF80MDll'),
+            InlineKeyboardButton('🛠 MY OWNER', url='https://t.me/Elsa_2_bot')
             ],[      
             InlineKeyboardButton('⚠️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('✨ ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url='https://t.me/MC_MONICA_bot?startgroup=true')
+            InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url='https://t.me/Elsa_2_bot?startgroup=true')
         ]]       
         reply_markup = InlineKeyboardMarkup(buttons)
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -216,15 +210,13 @@ async def start(client, message):
          
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('🔗 OUR CHANELS LINKS 🔗', url=f'https://t.me/MC_CINEMAS')
-            ],[
-            InlineKeyboardButton('📌 MY GROUP', url=f'https://t.me/+vaGyiQirUt4xNDFk'),
-            InlineKeyboardButton('🛠 MY OWNER', url='https://t.me/Leomc_bot')
+            InlineKeyboardButton('📌 MY GROUP', url=f'https://t.me/+3SrhYvCpBF80MDll'),
+            InlineKeyboardButton('🛠 MY OWNER', url='https://t.me/MC_Adminser_bot')
             ],[      
             InlineKeyboardButton('⚠️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('✨ ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url='https://t.me/MC_MONICA_bot?startgroup=true')
+            InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url='https://t.me/Elsa_2_bot?startgroup=true')
         ]]      
         reply_markup = InlineKeyboardMarkup(buttons)
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -393,9 +385,9 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Lᴀᴛᴇꜱᴛ Mᴏᴠɪᴇ Rᴇʟᴇᴀꜱᴇꜱ ⚙', url='https://t.me/MCUupdatesLINKS')
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('⚙ Lᴀᴛᴇꜱᴛ Mᴏᴠɪᴇ Rᴇʟᴇᴀꜱᴇꜱ ⚙', url='https://t.me/+3SrhYvCpBF80MDll')
             ],[
-            InlineKeyboardButton('🖥 Oᴛᴛ Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🖥', url='https://t.me/+uA5gEKm8WXk1ZTll')
+            InlineKeyboardButton('🖥 Oᴛᴛ Uᴩᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🖥', url='https://t.me/MC_Adminser_bot')
             ]])
     )
     k = await message.reply_text("**⚠️ 𝖳𝗁𝗂𝗌 𝗆𝖾𝖽𝗂𝖺 𝗐𝗂𝗅𝗅 𝖻𝖾 𝖽𝖾𝗅𝖾𝗍𝖾𝖽 𝗐𝗂𝗍𝗁𝗂𝗇 <u>5 𝗆𝗂𝗇𝗎𝗍𝖾.</u>**\n__𝖪𝗂𝗇𝖽𝗅𝗒 𝖿𝗈𝗋𝗐𝖺𝗋𝖽 𝗂𝗍 𝗍𝗈 𝗌𝖺𝗏𝖾𝖽 𝗆𝖾𝗌𝗌𝖺𝗀𝖾𝗌.__")
