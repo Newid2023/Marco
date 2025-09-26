@@ -461,16 +461,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     
     elif query.data == "start":
-        buttons = [[
-            InlineKeyboardButton('🔗 OUR CHANELS LINKS 🔗', url=f'https://t.me/MC_CINEMAS')
-            ],[
+        buttons = [
             InlineKeyboardButton('📌 MY GROUP', url=f'https://t.me/+3SrhYvCpBF80MDll'),
             InlineKeyboardButton('🛠 MY OWNER', url='https://t.me/MC_Adminser_bot')
             ],[      
             InlineKeyboardButton('⚠️ ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('✨ ᴀʙᴏᴜᴛ', callback_data='about')
             ],[
-            InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url='https://t.me/MC_MONICA_bot?startgroup=true')
+            InlineKeyboardButton('➕ ADD ME TO YOUR GROUP ➕', url='https://t.me/Elsa_2_bot?startgroup=true')
         ]]       
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -710,17 +708,28 @@ async def auto_filter(client, msg, spoll=False):
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
-            
+            y = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(600)
+            await y.delete()
+            try:
+                await message.delete()
+        
           #  await message.delete()
         except Exception as e:
             logger.exception(e)
-            await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-            
+            u = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(600)
+            await u.delete()
+            try:
+                await message.delete()
+    
           #  await message.delete()
     else:
-        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-        
+        j = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+        await asyncio.sleep(600)
+        await j.delete()
+        try:
+            await message.delete()
        # await message.delete()
    # if spoll:
       #  await msg.message.delete()
