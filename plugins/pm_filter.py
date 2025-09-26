@@ -711,9 +711,6 @@ async def auto_filter(client, msg, spoll=False):
             y = await message.reply_photo(photo=poster, caption=cap[:1024], reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
             await y.delete()
-            try:
-                await message.delete()
-        
           #  await message.delete()
         except Exception as e:
             logger.exception(e)
@@ -726,8 +723,6 @@ async def auto_filter(client, msg, spoll=False):
         j = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(600)
         await j.delete()
-        try:
-            await message.delete()
        # await message.delete()
    # if spoll:
       #  await msg.message.delete()
