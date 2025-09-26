@@ -461,7 +461,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     
     elif query.data == "start":
-        buttons = [
+        buttons = [[
             InlineKeyboardButton('📌 MY GROUP', url=f'https://t.me/+3SrhYvCpBF80MDll'),
             InlineKeyboardButton('🛠 MY OWNER', url='https://t.me/MC_Adminser_bot')
             ],[      
