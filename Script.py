@@ -41,9 +41,9 @@ Name - {}
 """
     CUSTOM_FILE_CAPTION = """<b>𝐻𝑒𝑙𝑙𝑜 👋 {mention} 😍
     
- <code>{file_caption}</code>
+ <code>{file_name}</code>
 
 ╔═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╗ 
-➲ <a href='https://t.me/+3SrhYvCpBF80MDll'>@MAIN Group</a>
+➲ <a href='https://t.me/+3SrhYvCpBF80MDll'>MAIN Group</a>
 ╚═══ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ═══╝
 </b>"""
