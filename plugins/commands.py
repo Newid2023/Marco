@@ -127,8 +127,8 @@ async def start(client, message):
         ]]       
         reply_markup = InlineKeyboardMarkup(buttons)
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_video(
-            video="https://envs.sh/FE4.mp4",
+        await message.reply_photo(
+            photo="https://telegra.ph/file/968e69261a4dc1c55e2e1.jpg",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -220,8 +220,8 @@ async def start(client, message):
         ]]      
         reply_markup = InlineKeyboardMarkup(buttons)
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_video(
-            video="https://envs.sh/FE4.mp4",
+        await message.reply_photo(
+            photo="https://telegra.ph/file/968e69261a4dc1c55e2e1.jpg",
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
@@ -881,7 +881,7 @@ async def clear_fsub_chats2(bot: Client, update: Message):
     with open("./dynamic.env", "wt+") as f:
         f.write(f"REQ_CHANNEL2=False\n")
 
-    logger.info("Restarting to update REQ_CHANNEL from database...")
+    logger.info("Restarting to update 8 from database...")
     os.execl(sys.executable, sys.executable, "bot.py")
     
 @Client.on_message(filters.command("viewchat2") & filters.user(ADMINS))
